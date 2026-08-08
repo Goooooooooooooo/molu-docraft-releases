@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0-alpha.16.2",
+  "notes": "## 安装包\n\n- macOS: `*-offline.dmg` / `*-lite.dmg`\n- Windows: `*-offline.exe` / `*-lite.exe`\n- Linux: `*-offline.deb` / `*-lite.deb`\n\n### 签名说明\n\n本 Alpha 版本的 macOS 与 Windows 安装包尚未进行操作系统官方代码签名，首次运行时系统会提示未知开发者/来源。Tauri updater 的 `.sig` 只用于验证自动更新包完整性，不能消除该系统提示。\n\n### macOS 安装\n\n1. 下载 DMG，将“墨炉.app”拖入 Applications 文件夹。\n2. 首次打开若提示无法验证开发者，右键（或 Ctrl+单击）应用并选择“打开”。\n3. 若仍被 Gatekeeper 拦截，前往“系统设置 → 隐私与安全性 → 仍要打开”。\n\n### Windows 安装\n\n下载 EXE；若 SmartScreen 显示“Windows 已保护你的电脑”，选择“更多信息 → 仍要运行”。\n\n### 校验方法\n\n每个发布资产都有同名 `.sha256`：macOS 使用 `shasum -a 256 <文件>`，Windows PowerShell 使用 `Get-FileHash <文件> -Algorithm SHA256`，Linux 使用 `sha256sum <文件>`。\n\n---\n\n## [0.1.0-alpha.16.2] - 2026-08-08\n\n### 新增\n\n### 变更\n\n### 修复\n\n- 修复中文产品名上传 GitHub Release 后被清洗、导致桌面资产名称不稳定的问题；发布资产改用确定性 ASCII 名称，SHA-256 文件可在下载目录直接校验。\n\n### 安全",
+  "pub_date": "2026-08-08T15:28:33.000Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://github.com/Goooooooooooooo/molu-docraft-releases/releases/download/v0.1.0-alpha.16.2/molu-docraft_0.1.0-alpha.16.2_aarch64-apple-darwin-offline.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTZGloY045dFFMd2Nyd2c0S0NCSFc1Qm1jY1U0RFFKVVhEOTZveUhYNGRqQ2FMbXFHMWc2VElVdldsZFhjamFPMXRnUzVBT3QvWGpMSlIzYmIwSUFMZTFVUlFYbGhsSEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MjAyMzExCWZpbGU65aKo54KJLmFwcC50YXIuZ3oKRzNaQmFGenpBaUNJUUFQUHl0MWI2dWhGbUZMSjlvUkJYVm44OG0zY2NxZEdFTmRyaHVYS09ZRHByRGxjcVFQYUxSNzZLcllZdCtOd25xTlhkSk0wQ0E9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/Goooooooooooooo/molu-docraft-releases/releases/download/v0.1.0-alpha.16.2/molu-docraft_0.1.0-alpha.16.2_x86_64-pc-windows-msvc-offline.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTZGloY045dFFMd2JvaHpkNXI3VEpxRTRhcGdmc0xBY1M5ZG5kS2xYdVkvRndwcVlFS2tqS0tXK1Awd0U3TXQvdkU2Y2VJSE9BdzBhT0YrcmdHNk5nNTF3NVdpcjJNcXdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MjAyNzgwCWZpbGU65aKo54KJXzAuMS4wLWFscGhhLjE2LjJfeDY0LXNldHVwLmV4ZQorcUs4WkZVd2I2Z3lJdkV0cXdRVHVyWE1TWjN4ZG9MNEpLNStTZ3h2eEl3UmgzS3R1VFpPb2Rib2pBMFlrWW5WbDdDRk0vUC9HRTdtaDNGaG5KaW9Edz09Cg=="
+    }
+  }
+}
